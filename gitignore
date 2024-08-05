@@ -1,0 +1,42 @@
+admin
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+node_modules/
+
+# Next.js build output
+.next/
+out/
+
+# Production build output
+build/
+
+# Static files
+/static/
+
+# dotenv environment variables file
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Next.js serverless function output
+.next/server/
+
+# Tailwind CSS generated files
+tailwind.config.js
+postcss.config.js
+
+# Misc
+.DS_Store
+*.pem
+*.p12
+*.crt
+*.key
