@@ -3,8 +3,12 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+body {
+  background-color: #111; /* Replace with your desired background color */
+}
+
 .pageContainer {
-    background-color: #333;
+    background-color: #111;
     min-height: 100vh;
     padding: 20px;
   }
@@ -18,22 +22,70 @@
   }
   
   .inputForm input {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     padding: 10px;
-    border: 1px solid #ffffff;
+    border: 3px solid #000000;
     border-radius: 4px;
-    margin-right: 10px;
+    width: 900px;
   }
   
   .inputForm button {
-    padding: 10px 15px;
-    border: none;
-    background-color: #ffffff;
-    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 72%;
+    transform: translateX(-50%);
+    padding: 10px 10px;
+    border: 3px solid #000000;
+    background-color: #838383;
+    color: #ffffff;
     border-radius: 4px;
     cursor: pointer;
+    width: 80px;
+    height: 50px;
   }
   
   .inputForm button:hover {
-    background-color: #555;
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+  .navBar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #111;
+    color: white;
+    height: 150px;
+  }
+
+  .navLinks {
+  display: flex;
+  margin-left: auto;
+    padding: 0;
+  }
+
+  .navLink {
+    color: white;
+    text-decoration: none;
+    margin: 60px 60px;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: background-color 0.3s;
+    font-family: Verdana, sans-serif;
+  }
+
+  .projectName {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 60px;
+    padding: 0px 0px 0px 0px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-family: Verdana, sans-serif;
   }
   
