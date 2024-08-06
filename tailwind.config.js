@@ -11,7 +11,12 @@ module.exports = {
   ],
   darkMode: "class",
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'github-light-grey': '#f5f5f5',  // Light GitHub grey
+        'github-dark-grey': '#24292e',   // Darker GitHub grey
+      },
+    },
   },
   plugins: [addVariablesForColors],
   
