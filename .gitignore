@@ -30,10 +30,6 @@ build/
 # Next.js serverless function output
 .next/server/
 
-# Tailwind CSS generated files
-tailwind.config.js
-postcss.config.js
-
 # Misc
 .DS_Store
 *.pem
