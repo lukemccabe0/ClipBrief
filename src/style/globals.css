@@ -2,3 +2,38 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+.pageContainer {
+    background-color: #333;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .inputForm {
+    margin-top: 20px;
+  }
+  
+  .inputForm label {
+    margin-right: 10px;
+  }
+  
+  .inputForm input {
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .inputForm button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #ffffff;
+    color: rgb(255, 255, 255);
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .inputForm button:hover {
+    background-color: #555;
+  }
+  
