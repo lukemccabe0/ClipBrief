@@ -21,18 +21,16 @@ const HomePage = () => {
         <title>Home Page</title>
         <meta name="description" content="This is the homepage of the site." />
       </Head>
-      <div className="container mx-auto p-4">
-      <PlaceholdersAndVanishInput
-        type="url"
-            id="linkInput"
-            name="linkInput"
-            value={link}
+      <div className="bg-gray-700 min-h-screen py-12"> {/* Light GitHub grey background */}
+        <div className="container mx-auto text-center">
+          <h1 className="text-6xl font-bold mb-8 text-white" style={{ fontFamily: 'Poppins, sans-serif' }}>ClipBrief</h1>
+          <PlaceholdersAndVanishInput
+            placeholders={['... Please enter a valid YouTube link for an AI Summary 🤖']}
             onChange={handleInputChange}
-            placeholders={['https://www.youtube.com/watch?v=r6tH55syq0o']}
-            required
-        onSubmit={handleSubmit}
-      />
-    </div>
+            onSubmit={handleSubmit}
+          />
+        </div>
+      </div>
     </Layout>
   );
 };
