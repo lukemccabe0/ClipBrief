@@ -1,0 +1,7 @@
+npm install googleapis axios
+npm install react-toastify
+npm install framer-motion
+npm install aceternity-ui
+npm install youtube-captions-scraper
+npm install ytdl-core
+npm install openai
