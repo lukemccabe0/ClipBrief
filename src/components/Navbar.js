@@ -6,10 +6,10 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex space-x-4">
           <Link href="/" legacyBehavior>
-            <a className="text-white font-bold hover:text-gray-400 text-sm">Home</a>
+            <a className="text-white font-bold hover:text-gray-400 text-sm">Start Generating!</a>
           </Link>
-          <Link href="/about" legacyBehavior>
-            <a className="text-white font-bold hover:text-gray-400 text-sm">About</a>
+          <Link href="https://github.com/lukemccabe0/ClipBrief" legacyBehavior>
+            <a className="text-white font-bold hover:text-gray-400 text-sm">GitHub</a>
           </Link>
         </div>
       </div>

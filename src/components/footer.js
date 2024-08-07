@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
   return (
     <footer style={styles.footer}>
-      <p>We have converted ............ videos to summaries!</p>
+      <p>We have converted <b>0</b> videos to summaries! 🔥</p>
     </footer>
   );
 };
