@@ -2,17 +2,44 @@ import React, { useState } from 'react';
 import Head from 'next/head';
 import Layout from '../components/layout';
 import { PlaceholdersAndVanishInput } from '../components/ui/placeholders-and-vanish-input';
+import { fetchVideoDetails } from '../backend/youtube';
 
 const HomePage = () => {
   const [link, setLink] = useState('');
+  const [captions, setCaptions] = useState('');
+  const [error, setError] = useState('');
+  const [filePath, setFilePath] = useState('');
 
   const handleInputChange = (event) => {
     setLink(event.target.value);
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    console.log('Submitted link:', link); // You can handle the link as needed
+    setError('');
+    setCaptions('');
+    setFilePath('');
+
+    try {
+      const response = await fetch('/api/saveCaptions', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ youtubeUrl: link }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setCaptions(data.fullCaptions);
+        setFilePath(data.filePath); // Set the file path to state
+      } else {
+        setError(data.error);
+      }
+    } catch (error) {
+      setError('An error occurred while extracting captions');
+    }
   };
 
   return (
