@@ -53,12 +53,27 @@ body {
   .navBar {
     position: relative;
     display: flex;
+    background-color: #000000;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: #111;
+    padding: 1% 12%;
+    box-shadow: 0 1px 0 rgba(204, 204, 204, 0.3);
+    color: rgb(255, 255, 255);
+    height: 20%;
+  }
+
+  .footer {
+    padding: 20px;
+    display: flex;
+    align-content: center;
+    background-color: #000000;
     color: white;
-    height: 150px;
+    position: fixed;
+    box-shadow: 0 -1px 0 rgba(204, 204, 204, 0.3);
+    bottom: 0;
+    width: 100%;
+    z-index: 9999;
+    justify-content: center;
   }
 
   .navLinks {
@@ -102,4 +117,10 @@ body {
 .fade-exit-active {
   opacity: 0;
   transition: opacity 300ms;
+}
+
+.card-custom-dimensions {
+  width: 60%; /* Set width to 80% of the screen */
+  max-width: 60%; /* Ensure it doesn't exceed the screen width */
+  margin: 0 auto; /* Center the card horizontally */
 }

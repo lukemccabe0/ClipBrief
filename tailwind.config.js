@@ -13,8 +13,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'github-light-grey': '#f5f5f5',  // Light GitHub grey
-        'github-dark-grey': '#24292e',   // Darker GitHub grey
+        'github-light-grey': '#000000',//'#f5f5f5',  // Light GitHub grey
+        'github-dark-grey': '#000000',//'#24292e',   // Darker GitHub grey
       },
     },
   },

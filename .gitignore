@@ -20,6 +20,9 @@ build/
 # Static files
 /static/
 
+# Config Files Containing API KEY
+src/config.js
+
 # dotenv environment variables file
 .env
 .env.local

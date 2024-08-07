@@ -1,7 +1,8 @@
-import { getSubtitles } from 'youtube-captions-scraper';
-import ytdl from 'ytdl-core';
+// Extracts Captions and Title and Returns as String 
+const getSubtitles = require('youtube-captions-scraper').getSubtitles;
+const ytdl = require('ytdl-core');
 
-export async function fetchVideoDetails(youtubeUrl) {
+async function fetchVideoDetails(youtubeUrl) {
     try {
         console.log(`Fetching video details for URL: ${youtubeUrl}`);
         // Extract video ID from the YouTube URL
@@ -22,10 +23,12 @@ export async function fetchVideoDetails(youtubeUrl) {
 
         // Combine title and captions into a single string
         const fullText = `Title: ${videoTitle}\n\n${captionsText}`;
-
         return fullText;
     } catch (error) {
         console.error('Error fetching video details:', error);
         throw error;
     }
 }
+module.exports = { 
+    fetchVideoDetails, 
+};
