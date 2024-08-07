@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Head from 'next/head';
 import Layout from '../components/layout';
 import { PlaceholdersAndVanishInput } from '../components/ui/placeholders-and-vanish-input';
-import { fetchVideoDetails } from '../backend/youtube';
 
 const HomePage = () => {
   const [link, setLink] = useState('');

@@ -8,9 +8,11 @@
     "start": "next start"
   },
   "dependencies": {
+    "@react-three/fiber": "^8.16.8",
+    "@types/three": "^0.167.1",
     "axios": "^1.7.3",
     "clsx": "^2.1.1",
-    "framer-motion": "^11.3.21",
+    "framer-motion": "^11.3.22",
     "google-auth-library": "^9.13.0",
     "googleapis": "^140.0.1",
     "next": "^14.2.5",
@@ -19,6 +21,7 @@
     "react-dom": "^18.3.1",
     "react-toastify": "^10.0.5",
     "tailwind-merge": "^2.4.0",
+    "three": "^0.167.1",
     "youtube-captions-scraper": "^2.0.3",
     "ytdl-core": "^4.11.5"
   },

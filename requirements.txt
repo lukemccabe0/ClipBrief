@@ -5,3 +5,4 @@ npm install aceternity-ui
 npm install youtube-captions-scraper
 npm install ytdl-core
 npm install openai
+npm i framer-motion clsx tailwind-merge three @react-three/fiber @types/three
