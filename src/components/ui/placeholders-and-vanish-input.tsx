@@ -17,10 +17,12 @@ export function PlaceholdersAndVanishInput({
   placeholders,
   onChange,
   onSubmit,
+  width = "100%",
 }: {
   placeholders: string[];
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   onSubmit: (e: React.FormEvent<HTMLFormElement>) => void;
+  width?: string;
 }) {
   const [currentPlaceholder, setCurrentPlaceholder] = useState(0);
   const [value, setValue] = useState("");
@@ -195,7 +197,7 @@ export function PlaceholdersAndVanishInput({
       <form
         className="w-full relative max-w-xl mx-auto bg-white dark:bg-zinc-800 h-12 rounded-full overflow-hidden shadow transition duration-200"
         onSubmit={handleSubmit}
-        style={{ backgroundColor: "white" }} // Change colour of search bar
+        style={{ backgroundColor: "white", maxWidth: width }} // Change colour of search bar
       >
         <canvas
           className={`absolute pointer-events-none text-base transform scale-50 top-[20%] left-2 sm:left-8 origin-top-left filter invert dark:invert-0 pr-20 ${
