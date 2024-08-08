@@ -8,6 +8,7 @@
     "start": "next start -p 3000"
   },
   "dependencies": {
+    "@distube/ytdl-core": "^4.14.4",
     "@react-three/fiber": "^8.16.8",
     "@types/three": "^0.167.1",
     "axios": "^1.7.3",
@@ -16,6 +17,7 @@
     "framer-motion": "^11.3.22",
     "google-auth-library": "^9.13.0",
     "googleapis": "^140.0.1",
+    "miniget": "^4.2.3",
     "next": "^14.2.5",
     "openai": "^4.55.1",
     "react": "^18.3.1",
@@ -26,6 +28,7 @@
     "tailwind-merge": "^2.4.0",
     "three": "^0.167.1",
     "youtube-captions-scraper": "^2.0.3",
+    "ytdl": "^1.4.1",
     "ytdl-core": "^4.11.5"
   },
   "devDependencies": {

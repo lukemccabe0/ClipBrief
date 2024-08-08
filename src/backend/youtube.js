@@ -1,6 +1,6 @@
 // Extracts Captions and Title and Returns as String 
 const getSubtitles = require('youtube-captions-scraper').getSubtitles;
-const ytdl = require('ytdl-core');
+const ytdl = require('@distube/ytdl-core');
 
 async function fetchVideoDetails(youtubeUrl) {
     try {
