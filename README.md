@@ -1,1 +1,1 @@
-# ClipBrief v1.0.0!
+# ClipBrief v1.0.0
