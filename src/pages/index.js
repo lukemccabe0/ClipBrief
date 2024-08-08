@@ -33,7 +33,7 @@ const HomePage = () => {
             placeholders={['... Please enter a valid YouTube link for an AI Summary 🤖']}
             onChange={handleInputChange}
             onSubmit={handleSubmit}
-            width = "35%"
+            width ={500}
           />
         </div>
         <CSSTransition // Start of the summary box

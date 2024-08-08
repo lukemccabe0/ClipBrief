@@ -54,8 +54,9 @@ body {
     position: relative;
     display: flex;
     background-color: #000000;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 60px;
     padding: 1% 12%;
     box-shadow: 0 1px 0 rgba(204, 204, 204, 0.3);
     color: rgb(255, 255, 255);
@@ -79,7 +80,6 @@ body {
 
   .navLinks {
   display: flex;
-  margin-left: auto;
     padding: 0;
   }
 

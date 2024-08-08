@@ -17,12 +17,12 @@ export function PlaceholdersAndVanishInput({
   placeholders,
   onChange,
   onSubmit,
-  width = "100%",
+  width = 600,
 }: {
   placeholders: string[];
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   onSubmit: (e: React.FormEvent<HTMLFormElement>) => void;
-  width?: string;
+  width?: number;
 }) {
   const [currentPlaceholder, setCurrentPlaceholder] = useState(0);
   const [value, setValue] = useState("");
