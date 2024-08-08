@@ -32,15 +32,21 @@ async function fetchVideoDetails(youtubeUrl) {
         const videoTitle = videoInfo.videoDetails.title;
 
         // Fetch the captions
-        const captions = await getSubtitles({
-            videoID: videoId,
-            lang: 'en'
-        });
+        let captions;
+        try {
+            captions = await getSubtitles({
+                videoID: videoId,
+                lang: 'en'
+            });
+        } catch (error) {
+            console.warn(`Could not find captions for video: ${videoId}`);
+            captions = [];
+        }
 
-        // Convert captions to a single text string
-        const captionsText = captions.map(caption => caption.text).join('\n');
+        const captionsText = captions.length > 0
+            ? captions.map(caption => caption.text).join('\n')
+            : 'No captions available';
 
-        // Combine title and captions into a single string
         const fullText = `Title: ${videoTitle}\n\n${captionsText}`;
         return fullText;
     } catch (error) {
