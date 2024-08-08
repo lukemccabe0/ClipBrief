@@ -2,10 +2,14 @@
 const getSubtitles = require('youtube-captions-scraper').getSubtitles;
 const ytdl = require('@distube/ytdl-core');
 const fs = require('fs');
+const path = require('path');                               
 
+const cookiesPath = path.join(process.cwd(), 'src', 'backend', 'cookies.json');
+
+// Create agent from cookies.json
 let agent;
 try {
-    const cookies = fs.readFileSync("cookies.json", "utf8");
+    const cookies = fs.readFileSync(cookiesPath, "utf8");
     agent = ytdl.createAgent(JSON.parse(cookies));
 } catch (error) {
     console.error("Error reading cookies.json:", error);
