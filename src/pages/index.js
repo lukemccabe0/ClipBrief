@@ -30,10 +30,10 @@ const HomePage = () => {
         <div className="container mx-auto text-center">
           <h1 className="text-6xl font-bold mb-8 text-white" style={{ fontFamily: 'Poppins, sans-serif' }}>ClipBrief</h1>
           <PlaceholdersAndVanishInput
-            placeholders={['... Please enter a valid YouTube link for an AI Summary 🤖']}
+            placeholders={['Please enter a valid YouTube link for an AI Summary 🤖']}
             onChange={handleInputChange}
             onSubmit={handleSubmit}
-            width ={500}
+            width ={450}
           />
         </div>
         <CSSTransition // Start of the summary box
