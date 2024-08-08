@@ -1,8 +1,8 @@
 const openAI = require("openai");
 require('dotenv').config();
-console.log(NEXT_PUBLIC_OPENAI_API_KEY);
+console.log(process.env.OPENAI_API_KEY);
 const client = new openAI.OpenAI({
-    apiKey: process.env.NEXT_PUBLIC_OPENAI_API_KEY
+    apiKey: process.env.OPENAI_API_KEY
 })
 
 
