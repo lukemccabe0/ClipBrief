@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import toast from 'react-hot-toast';
 import { CardSpotlight } from './ui/card-spotlight'; // Adjust the import path as necessary
+import { TextGenerateEffect } from './ui/text-generate-effect';
 
 const SummaryComponent = ({ youtubeUrl }) => {
   const [summary, setSummary] = useState('Fetching summary...'); // Initial placeholder text
@@ -32,7 +33,7 @@ const SummaryComponent = ({ youtubeUrl }) => {
       <CardSpotlight className="card-custom-dimensions"> {/* Constrain width and height */}
         <p className="text-xl font-bold relative z-20 mt-2 text-white"><b>Video Summary</b></p>
         <div className="text-neutral-200 mt-4 relative z-20">
-          {summary}
+        <TextGenerateEffect words={summary} />
         </div>
         <p className="text-neutral-300 mt-4 relative z-20 text-sm">
           {/* <b>--<i> Due to the use of AI, the summary may be subject to bias and not be completely accurate to the original video.</i> --</b>
