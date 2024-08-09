@@ -17,6 +17,20 @@ const HomePage = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+
+  // Call the API to increment the counter
+  try {
+    const response = await fetch('/api/incrementCounter', {
+      method: 'POST',
+    });
+
+    if (!response.ok) {
+      console.error('Failed to increment counter');
+    }
+  } catch (error) {
+    console.error('Error occurred while incrementing counter:', error);
+  }
+
     setShowCard(true);
   };
 
