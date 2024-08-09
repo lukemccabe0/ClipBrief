@@ -35,9 +35,10 @@ const SummaryComponent = ({ youtubeUrl }) => {
           {summary}
         </div>
         <p className="text-neutral-300 mt-4 relative z-20 text-sm">
-          <b>--<i> Due to the use of AI, the summary may be subject to bias and not be completely accurate to the original video.</i> --</b>
+          {/* <b>--<i> Due to the use of AI, the summary may be subject to bias and not be completely accurate to the original video.</i> --</b>
           <br />
-          <b>-<i> Did you know? It takes around 30 seconds to summarise a 9-hour video!</i> -</b>
+          <b>-<i> Did you know? It takes around 30 seconds to summarise a 9-hour video!</i> -</b> */}
+          <i> Due to the use of AI, the summary may be subject to bias and not be completely accurate to the original video.</i>
         </p>
       </CardSpotlight>
     </div>

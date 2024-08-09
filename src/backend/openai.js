@@ -11,7 +11,7 @@ async function fetchGPTSummary(fullText) {
         const completions = await client.chat.completions.create({
             messages: [{
                 role: "system",
-                content: `Make a word summary of the following content using an informational tone, dont try to bold or italic any words:\n\n${fullText}`
+                content: `Summarise this in Mandarin and dont try to bold or italic any words:\n\n${fullText}`
             }],
             model: "gpt-4o-mini"
         });
